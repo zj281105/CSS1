@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .tb-promo {
+            width: 846px;
+            height: 472px;
+            background-color: pink;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .tb-promo img {
+            width: 846px;
+            height: 472px;
+        }
+
+        /* 并集选择器 */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            width: 30px;
+            height: 60px;
+            background: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .prev {
+            left: 0;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .next {
+            right: 0;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        .pro-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -70px;
+            width: 140px;
+            height: 26px;
+            background: rgba(255, 255, 255, .3);
+            border-radius: 7px;
+        }
+
+        .pro-nav li {
+            float: left;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 6px;
+        }
+
+        .pro-nav .selected {
+            background-color: #f50000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="images/tb.png" alt="">
+        <!-- 左侧按钮 -->
+        <a href="#" class="prev">&lt;</a>
+        <!-- 右侧按钮 -->
+        <a href="#" class="next">&gt;</a>
+        <!-- 小圆点 -->
+        <ul class="pro-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
